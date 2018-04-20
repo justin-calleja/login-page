@@ -1,0 +1,23 @@
+{
+	"name": "@justinc/login-page",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"watch": "gulp watch:css",
+		"build": "gulp",
+		"server": "python -m SimpleHTTPServer",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Justin Calleja <calleja.justin@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"autoprefixer": "^8.3.0",
+		"del": "^3.0.0",
+		"gulp": "^3.9.1",
+		"gulp-postcss": "^7.0.1",
+		"postcss-import": "^11.1.0",
+		"postcss-simple-vars": "^4.1.0"
+	},
+	"dependencies": {}
+}

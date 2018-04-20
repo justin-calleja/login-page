@@ -1,0 +1,116 @@
+@import './variables.css';
+@import './global.css';
+@import './checkbox.css';
+@import './webkit-autofill.css';
+
+body {
+	background-color: $outerSpace;
+	color: $shuttleGrey;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.login-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+}
+
+.hidden {
+	display: none;
+}
+
+input {
+	border: 0;
+	color: inherit;
+	font: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	transition: background-color 0.3s;
+	width: 100%;
+}
+
+.login {
+	color: $gallery;
+	max-width: 30em;
+	width: 80%;
+}
+
+.login .label.label--icon {
+	background-color: $tuna;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.login .label.label--icon,
+.login input[type='text'],
+.login input[type='password'],
+.login input[type='submit'] {
+	border-radius: 0.25rem;
+	padding: 1rem;
+}
+
+.login input[type='password'],
+.login input[type='text'] {
+	background-color: $brightGrey;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+.login input[type='password']:focus,
+.login input[type='password']:hover,
+.login input[type='text']:focus,
+.login input[type='text']:hover {
+	background-color: $mako;
+}
+
+.login input[type='submit'] {
+	background-color: $frenchRose;
+	color: $gallery;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.login input[type='submit']:focus,
+.login input[type='submit']:hover {
+	background-color: $cabaret;
+}
+
+.form__field {
+	display: flex;
+	margin: 0.875rem;
+}
+
+.form__input {
+	flex: 1;
+}
+
+.form__input[type='checkbox'] {
+	appearance: none;
+}
+
+.icon {
+	display: inline-block;
+	fill: $shuttleGrey;
+	font-size: 1rem;
+	height: 1em;
+	vertical-align: middle;
+	width: 1em;
+}
+
+.forgot-password {
+	color: $shuttleGrey;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.forgot-password:hover {
+	color: $gallery;
+	text-decoration: underline;
+}

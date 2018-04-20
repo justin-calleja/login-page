@@ -1,0 +1,205 @@
+/* http://chir.ag/projects/name-that-color */
+
+:root {
+	box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
+
+/* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+
+.label--remember-me {
+	display: flex;
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.label--remember-me input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+	height: 1.5em;
+	width: 1.5em;
+	background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+
+.label--remember-me:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.label--remember-me input:checked ~ .checkmark {
+	background-color: #d44179;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+
+.label--remember-me input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.label--remember-me .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid #eee;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+}
+
+.remember-me-text {
+	margin-left: 1em;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 30px #3b4148 inset !important;
+}
+
+input:-webkit-autofill {
+	-webkit-text-fill-color: #eee !important;
+}
+
+input {
+	caret-color: #eee;
+}
+
+body {
+	background-color: #2c3338;
+	color: #606468;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.login-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+}
+
+.hidden {
+	display: none;
+}
+
+input {
+	border: 0;
+	color: inherit;
+	font: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	transition: background-color 0.3s;
+	width: 100%;
+}
+
+.login {
+	color: #eee;
+	max-width: 30em;
+	width: 80%;
+}
+
+.login .label.label--icon {
+	background-color: #363b41;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.login .label.label--icon,
+.login input[type='text'],
+.login input[type='password'],
+.login input[type='submit'] {
+	border-radius: 0.25rem;
+	padding: 1rem;
+}
+
+.login input[type='password'],
+.login input[type='text'] {
+	background-color: #3b4148;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+.login input[type='password']:focus,
+.login input[type='password']:hover,
+.login input[type='text']:focus,
+.login input[type='text']:hover {
+	background-color: #434a52;
+}
+
+.login input[type='submit'] {
+	background-color: #ea4c88;
+	color: #eee;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.login input[type='submit']:focus,
+.login input[type='submit']:hover {
+	background-color: #d44179;
+}
+
+.form__field {
+	display: flex;
+	margin: 0.875rem;
+}
+
+.form__input {
+	flex: 1;
+}
+
+.form__input[type='checkbox'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.icon {
+	display: inline-block;
+	fill: #606468;
+	font-size: 1rem;
+	height: 1em;
+	vertical-align: middle;
+	width: 1em;
+}
+
+.forgot-password {
+	color: #606468;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.forgot-password:hover {
+	color: #eee;
+	text-decoration: underline;
+}
