@@ -4,7 +4,7 @@
 @import './webkit-autofill.css';
 
 body {
-	background-color: $outerSpace;
+	background-color: #f8f9fa;
 	color: $shuttleGrey;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.875rem;
@@ -87,6 +87,10 @@ input {
 	margin: 0.875rem;
 }
 
+.form__field--password {
+	margin-bottom: 0.2em;
+}
+
 .form__input {
 	flex: 1;
 }
@@ -113,4 +117,14 @@ input {
 .forgot-password:hover {
 	color: $gallery;
 	text-decoration: underline;
+}
+
+.submit-container {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+.submit-container .form__field--submit {
+	flex: 1;
 }

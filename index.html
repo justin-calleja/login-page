@@ -25,7 +25,7 @@
         <input id="login__email" type="text" name="email" class="form__input" placeholder="Email" required>
       </div>
 
-      <div class="form__field">
+      <div class="form__field form__field--password">
         <label class="label label--icon" for="login__password">
           <svg class="icon">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lock"></use>
@@ -35,18 +35,19 @@
         <input id="login__password" type="password" name="password" class="form__input" placeholder="Password" required>
       </div>
 
-      <div class="form__field">
-        <label class="label label--remember-me" for="login__remember-me">
-          <input id="login__remember-me" type="checkbox">
-          <span class="checkmark"></span>
-          <span class="remember-me-text">Remember me</span>
-        </label>
-      </div>
+      <div class="submit-container">
+        <div class="form__field">
+          <label class="label label--remember-me" for="login__remember-me">
+            <input id="login__remember-me" type="checkbox">
+            <span class="checkmark"></span>
+            <span class="remember-me-text">Remember me</span>
+          </label>
+        </div>
 
-      <div class="form__field">
-        <input type="submit" value="log in">
+        <div class="form__field form__field--submit">
+          <input type="submit" value="log in">
+        </div>
       </div>
-
     </form>
 
     <a class="forgot-password" href="#">Forgot Password?</a>
