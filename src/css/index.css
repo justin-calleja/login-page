@@ -29,7 +29,6 @@ input {
 	margin: 0;
 	outline: 0;
 	padding: 0;
-	transition: background-color 0.3s;
 	width: 100%;
 }
 
@@ -46,7 +45,6 @@ input {
 .login input[type='text'],
 .login input[type='password'],
 .login input[type='submit'] {
-	border-radius: 0.25rem;
 	padding: 1rem;
 }
 
@@ -79,10 +77,6 @@ input {
 .form__field {
 	display: flex;
 	margin: 0.875rem;
-}
-
-.form__field--password {
-	margin-bottom: 0.2em;
 }
 
 .form__input {
