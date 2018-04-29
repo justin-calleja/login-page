@@ -128,3 +128,7 @@ input {
 .submit-container .form__field--submit {
 	flex: 1;
 }
+
+.cartoon-container {
+	width: 20em;
+}
