@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"watch": "gulp watch:css",
+		"watch": "while true; do gulp watch:css; sleep 1; done",
 		"build": "gulp",
 		"server": "python -m SimpleHTTPServer",
 		"test": "echo \"Error: no test specified\" && exit 1"
