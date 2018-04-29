@@ -48,16 +48,35 @@ input {
 	padding: 1rem;
 }
 
+.form__input-wrapper {
+	width: 100%;
+	position: relative;
+}
+
 .login input[type='password'],
 .login input[type='text'] {
 	border-bottom: 2px solid $hummingBird;
+	position: relative;
 }
 
-.login input[type='password']:focus,
-.login input[type='password']:hover,
-.login input[type='text']:focus,
-.login input[type='text']:hover {
-	background-color: $mako;
+.login input[type='password']:focus + .underline-wrapper > .underline,
+.login input[type='text']:focus + .underline-wrapper > .underline {
+	transform: scale(1);
+}
+
+.underline-wrapper {
+	position: relative;
+}
+
+.underline {
+	background-color: $sanMarino;
+	display: inline-block;
+	height: 2px;
+	margin-top: -2px;
+	position: absolute;
+	transform: scale(0, 1);
+	transition: all 0.2s linear;
+	width: 100%;
 }
 
 .login input[type='submit'] {

@@ -140,7 +140,17 @@
           </svg>
           <span class="hidden">Email</span>
         </label>
-        <input id="login__email" type="text" name="email" class="form__input" placeholder="Email" required>
+        <div class="form__input-wrapper">
+          <input id="login__email" type="text" name="email" class="form__input" placeholder="Email" required>
+          <!--
+              FF is ignoring position relative of form__input-wrapper so added a wrapper for .underline.
+              NOTE: just the precense of this comment fixes this FF issue (making the underline-wrapper unncessary).
+              But I'd rather not rely on a comment.
+            -->
+          <div class="underline-wrapper">
+            <span class="underline"></span>
+          </div>
+        </div>
       </div>
 
       <div class="form__field form__field--password">
@@ -150,7 +160,17 @@
           </svg>
           <span class="hidden">Password</span>
         </label>
-        <input id="login__password" type="password" name="password" class="form__input" placeholder="Password" required>
+        <div class="form__input-wrapper">
+          <input id="login__password" type="password" name="password" class="form__input" placeholder="Password" required>
+          <!--
+              FF is ignoring position relative of form__input-wrapper so added a wrapper for .underline.
+              NOTE: just the precense of this comment fixes this FF issue (making the underline-wrapper unncessary).
+              But I'd rather not rely on a comment.
+            -->
+          <div class="underline-wrapper">
+            <span class="underline"></span>
+          </div>
+        </div>
       </div>
 
       <div class="submit-container">
