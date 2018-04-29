@@ -1,0 +1,153 @@
+body {
+	background-color: $athensGrey;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+.login-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	height: 100vh;
+	width: 100vw;
+	max-height: 100vh;
+	max-width: 100vw;
+}
+
+.hidden {
+	display: none;
+}
+
+input {
+	border: 0;
+	color: inherit;
+	font: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.form.login {
+	max-width: 30em;
+	width: 80%;
+}
+
+.login .label.label--icon {
+	background-color: $gallery;
+}
+
+.login .label.label--icon,
+.login input[type='text'],
+.login input[type='password'],
+.login input[type='submit'] {
+	padding: 1rem;
+}
+
+.form__input-wrapper {
+	width: 100%;
+	position: relative;
+}
+
+.login input[type='password'],
+.login input[type='text'] {
+	border-bottom: 2px solid $hummingBird;
+	position: relative;
+}
+
+.login input[type='password']:focus + .underline-wrapper > .underline,
+.login input[type='text']:focus + .underline-wrapper > .underline {
+	transform: scale(1);
+}
+
+.underline-wrapper {
+	position: relative;
+}
+
+.underline {
+	background-color: $blizzardBlue;
+	display: inline-block;
+	height: 2px;
+	margin-top: -2px;
+	position: absolute;
+	transform: scale(0, 1);
+	transition: all 0.2s linear;
+	width: 100%;
+}
+
+.login input[type='submit'] {
+	background-color: $hummingBird;
+	color: $outerSpace;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.login input[type='submit']:focus,
+.login input[type='submit']:hover {
+	background-color: $blizzardBlue;
+	color: $gallery;
+}
+
+.form__field,
+.forgot-password {
+	margin: 0.875rem;
+}
+
+.form__field--email,
+.form__field--password {
+	display: flex;
+}
+
+.form__input[type='checkbox'] {
+	appearance: none;
+}
+
+.icon {
+	display: inline-block;
+	fill: $shuttleGrey;
+	font-size: 1rem;
+	height: 1em;
+	vertical-align: middle;
+	width: 1em;
+}
+
+.form__field--submit {
+	width: 100%;
+}
+
+.login-actions-container {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.form__field--remember-me {
+	order: 1;
+}
+
+.forgot-password {
+	order: 2;
+}
+
+.forgot-password {
+	color: $sanMarino;
+	text-decoration: none;
+}
+
+.forgot-password:hover {
+	color: $outerSpace;
+	text-decoration: underline;
+}
+
+.cartoon-container {
+	width: 22em;
+	margin-bottom: 2.5em;
+}
