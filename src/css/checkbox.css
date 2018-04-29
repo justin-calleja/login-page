@@ -5,7 +5,6 @@
 	position: relative;
 	cursor: pointer;
 	user-select: none;
-	color: $outerSpace;
 }
 
 .label--remember-me input {
@@ -17,16 +16,6 @@
 .checkmark {
 	height: 1.5em;
 	width: 1.5em;
-	/* background-color: $gallery; */
-	background-color: $athensGrey;
-}
-
-.label--remember-me:hover input ~ .checkmark {
-	background-color: $gallery;
-}
-
-.label--remember-me input:checked ~ .checkmark {
-	/* background-color: $hummingBird; */
 	background-color: none;
 }
 
