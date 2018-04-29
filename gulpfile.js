@@ -6,7 +6,7 @@ const simpleVars = require('postcss-simple-vars');
 const del = require('del');
 
 gulp.task('css', function() {
-	const postcssPlugins = [atImport, autoprefixer({ browsers: ['> 1%'], cascade: false }), simpleVars];
+	const postcssPlugins = [atImport, autoprefixer(), simpleVars];
 
 	return gulp
 		.src('src/css/index.css')
