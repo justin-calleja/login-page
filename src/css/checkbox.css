@@ -5,6 +5,7 @@
 	position: relative;
 	cursor: pointer;
 	user-select: none;
+	color: $outerSpace;
 }
 
 .label--remember-me input {
@@ -13,24 +14,22 @@
 	cursor: pointer;
 }
 
-/* Create a custom checkbox */
 .checkmark {
 	height: 1.5em;
 	width: 1.5em;
+	/* background-color: $gallery; */
+	background-color: $athensGrey;
+}
+
+.label--remember-me:hover input ~ .checkmark {
 	background-color: $gallery;
 }
 
-/* On mouse-over, add a grey background color */
-.label--remember-me:hover input ~ .checkmark {
-	background-color: $silver;
-}
-
-/* When the checkbox is checked, add a blue background */
 .label--remember-me input:checked ~ .checkmark {
-	background-color: $cabaret;
+	/* background-color: $hummingBird; */
+	background-color: none;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
 	content: '';
 	position: absolute;
@@ -42,17 +41,16 @@
 	display: block;
 }
 
-/* Style the checkmark/indicator */
 .label--remember-me .checkmark:after {
 	left: 9px;
 	top: 5px;
 	width: 5px;
 	height: 10px;
-	border: solid $gallery;
+	border: solid $outerSpace;
 	border-width: 0 3px 3px 0;
 	transform: rotate(45deg);
 }
 
 .remember-me-text {
-	margin-left: 1em;
+	margin-left: 0.5em;
 }
