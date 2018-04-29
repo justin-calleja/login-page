@@ -1,0 +1,29 @@
+@media only screen and (min-width: 960px) {
+	body {
+		background-color: white;
+	}
+
+	.overlay {
+		height: 100vh;
+		width: 100vw;
+		max-height: 100vh;
+		max-width: 100vw;
+
+		clip-path: polygon(10% 0%, 70% 0%, 90% 100%, 30% 100%);
+		z-index: -100;
+		background-color: $athensGrey;
+		top: 0;
+		position: absolute;
+		display: inline-block;
+		overflow: hidden;
+	}
+
+	.form__field--submit {
+		width: 50%;
+	}
+
+	.forgot-password {
+		width: 100%;
+		text-align: right;
+	}
+}
