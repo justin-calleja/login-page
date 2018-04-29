@@ -1,9 +1,0 @@
-input:-webkit-autofill {
-	-webkit-box-shadow: 0 0 0 30px $brightGrey inset !important;
-}
-input:-webkit-autofill {
-	-webkit-text-fill-color: $gallery !important;
-}
-input {
-	caret-color: $gallery;
-}
