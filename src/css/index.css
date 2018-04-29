@@ -3,8 +3,7 @@
 @import './checkbox.css';
 
 body {
-	background-color: #f8f9fa;
-	color: $shuttleGrey;
+	background-color: $athensGrey;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.875rem;
 	font-weight: 400;
@@ -35,15 +34,12 @@ input {
 }
 
 .login {
-	color: $gallery;
 	max-width: 30em;
 	width: 80%;
 }
 
 .login .label.label--icon {
-	background-color: $tuna;
-	border-bottom-right-radius: 0;
-	border-top-right-radius: 0;
+	background-color: $athensGrey;
 }
 
 .login .label.label--icon,
@@ -56,9 +52,7 @@ input {
 
 .login input[type='password'],
 .login input[type='text'] {
-	background-color: $brightGrey;
-	border-bottom-left-radius: 0;
-	border-top-left-radius: 0;
+	border-bottom: 2px solid $hummingBird;
 }
 
 .login input[type='password']:focus,
@@ -69,8 +63,8 @@ input {
 }
 
 .login input[type='submit'] {
-	background-color: $frenchRose;
-	color: $gallery;
+	background-color: $hummingBird;
+	color: $outerSpace;
 	font-weight: 700;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -78,7 +72,8 @@ input {
 
 .login input[type='submit']:focus,
 .login input[type='submit']:hover {
-	background-color: $cabaret;
+	background-color: $sanMarino;
+	color: $gallery;
 }
 
 .form__field {
@@ -114,7 +109,7 @@ input {
 }
 
 .forgot-password:hover {
-	color: $gallery;
+	color: $outerSpace;
 	text-decoration: underline;
 }
 
