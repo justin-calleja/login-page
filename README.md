@@ -1,3 +1,5 @@
+You can view the built login page live here: [https://justin-calleja.github.io/login-page/](https://justin-calleja.github.io/login-page/).
+
 ### Open in browser
 
 Simply get the latest `master` and open the `index.html` file.

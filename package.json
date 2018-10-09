@@ -5,7 +5,9 @@
 	"main": "index.js",
 	"scripts": {
 		"watch": "while true; do gulp watch:css; sleep 1; done",
-		"build": "gulp",
+                "clean": "rm -rf dist build && mkdir dist build",
+		"build": "npm run clean && gulp && cp -R build index.html cartoon.js dist",
+                "deploy": "gh-pages -d dist",
 		"server": "python -m SimpleHTTPServer",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -14,6 +16,7 @@
 	"devDependencies": {
 		"autoprefixer": "^8.3.0",
 		"del": "^3.0.0",
+		"gh-pages": "^2.0.1",
 		"gulp": "^3.9.1",
 		"gulp-postcss": "^7.0.1",
 		"postcss-import": "^11.1.0",
